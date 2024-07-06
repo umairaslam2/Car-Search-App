@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: url(images/hero-1.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: background-image 1s ease-in-out;
+  position: relative;
+}
+.header .navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  z-index: 9999;
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar .logo,
+.navbar .list {
+  width: 50%;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.logo h1 {
+  font-size: 28px;
+  font-weight: 600;
+  z-index: 9999;
+}
+.logo h1 a {
+  color: #fff;
+}
+.navbar .list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+  transition: 0.3s ease-in-out;
+}
+.list li {
+  margin: 0 5px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.list li a {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.list li a:hover {
+  color: royalblue;
+}
+.list li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.navbar i {
+  width: 30%;
+  font-size: 45px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+  text-align: end;
+  padding-right: 10px;
+  z-index: 9999;
+  transition: 0.3s ease-in-out;
+}
+.header .searchContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .searchContent .searchBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.searchBox select {
+  width: 250px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  font-size: 17px;
+}
+.searchBox button {
+  width: 150px;
+  height: 35px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  background: royalblue;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.searchBox button:hover {
+  background-color: rgb(41, 87, 228);
+}
+
+.list li:hover a::after {
+  width: 100%;
+}
+#carDetails {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#carDetails .box {
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  display: flex;
+}
+
+#carDetails .box .imgBox {
+  text-align: center;
+  width: 60%;
+}
+
+#carDetails .box .imgBox img {
+  width: 100%;
+}
+
+#carDetails .box .textBox {
+  margin-top: 1rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#carDetails .box .textBox h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#carDetails .box .textBox p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ################ suzuki section ################### */
+#suzuki {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+#suzuki h1 {
+  font-size: 54px;
+  letter-spacing: 1px;
+  color: royalblue;
+  margin-bottom: 20px;
+}
+#suzuki .carBoxes {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.carBoxes .box {
+  width: 30%;
+  height: 370px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  margin: 20px 0;
+  box-shadow: 0 0 5px #000;
+}
+.box .imgBox .box .textBox {
+  width: 100%;
+  height: 50%;
+}
+.box .imgBox img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.box:hover .imgBox img {
+  transform: scale(0.95);
+}
+.textBox h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.textBox h3 span {
+  font-weight: 300;
+}
+.textBox p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.textBox p span {
+  font-weight: 400;
+}
+/* ################ toyota section ################### */
+#toyota {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+#toyota h1 {
+  font-size: 54px;
+  letter-spacing: 1px;
+  color: royalblue;
+  margin-bottom: 20px;
+}
+#toyota .carBoxes {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#toyota .carBoxes .box {
+  width: 30%;
+  height: 370px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  margin: 20px 0;
+  box-shadow: 0 0 5px #000;
+}
+/* ################ kia section ################### */
+
+#kia {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+#kia h1 {
+  font-size: 54px;
+  letter-spacing: 1px;
+  color: royalblue;
+  margin-bottom: 20px;
+}
+#kia .carBoxes {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#kia .carBoxes .box {
+  width: 30%;
+  height: 370px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  margin: 20px 0;
+  box-shadow: 0 0 5px #000;
+}
+
+/* ################### media query ################### */
+
+@media (max-width: 790px) {
+  #suzuki .carBoxes .box {
+    width: 45%;
+  }
+  #toyota .carBoxes .box {
+    width: 45%;
+  }
+  #kia .carBoxes .box {
+    width: 45%;
+  }
+  .header .searchContent .searchBox {
+    flex-direction: column;
+  }
+  .searchBox select {
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  .searchBox button {
+    width: 60%;
+  }
+}
+/* ############# 555px ############## */
+@media (max-width: 555px) {
+  .navbar .logo {
+    width: 70%;
+  }
+  .navbar i {
+    display: block;
+  }
+  .navbar .list {
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: -600px;
+    right: 0;
+    width: 100%;
+    padding: 70px 20px;
+    align-items: flex-start;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .navbar .list li {
+    margin: 10px 0;
+  }
+  #carDetails .box{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #carDetails .box .imgBox,#carDetails .box .textBox {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #carDetails .box .textBox{
+    align-items: flex-start;
+  }
+}
+/* ######## 535px ################## */
+@media (max-width: 535px) {
+  #suzuki .carBoxes .box {
+    width: 100%;
+  }
+  #toyota .carBoxes .box {
+    width: 100%;
+  }
+  #kia .carBoxes .box {
+    width: 100%;
+  }
+}
