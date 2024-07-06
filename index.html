@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-Showroom</title>
+    <link rel="icon" href="images/hero-1.avif">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <haeder id="head" class="header">
+        <nav class="navbar">
+          <div class="logo">
+            <h1><a href='/'>CAR STORE</a></h1>
+          </div>
+          <ul class="list">
+            <li><a href="#head">HOME</a></li>
+            <li><a href="#suzuki">SUZUKI</a></li>
+            <li><a href="#toyota">TOYOTA</a></li>
+            <li><a href="#kia" >KIA</a></li>
+          </ul>
+          <i id="bar" class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="searchContent">
+          <div class="searchBox">
+            <select id="brand">
+              <option value="SELECT CAR">SELECT CAR</option>
+            </select>
+            <select id="model">
+              <option value="SELECT MODEL">SELECT MODEL</option>
+            </select>
+            <button id="searchCar">Search</button>
+          </div>
+        </div>
+      </haeder>
+      <section id="carDetails"></section>
+      <!-- ############# Suzuki Section ############### -->
+      <section id="suzuki">
+        <h1>SUZUKI</h1>
+        <div class="carBoxes">
+          <div class="box suzukiAlto">
+            <div class="imgBox altoImgBox">
+              <img src="images/suzukiAlto.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="altoName">Suzuki Alto</span></h3>
+              <p>ENGINE: <span id="altoEngine">658cc</span></p>
+              <p>TRANSMISSION: <span id="altoTrans">Manual/Automatic</span></p>
+              <p>PRICE: <span id="altoprice">PKR 3,062,000 - 3,563,000</span></p>
+            </div>
+          </div>
+           <div class="box suzukiWagonR">
+            <div class="imgBox">
+              <img src="images/suzukiwagonr.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="wagonName">Suzuki Wagon R</span></h3>
+              <p>ENGINE: <span id="wagonEngine">658cc</span></p>
+              <p>TRANSMISSION: <span id="wagonTrans">Manual/Automatic</span></p>
+              <p>PRICE: <span id="wagonprice">PKR 3,062,000 - 3,563,000</span></p>
+            </div>
+          </div>
+           <div class="box suzukiCultus">
+            <div class="imgBox">
+              <img src="images/suzukicultus.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="cultusName">Suzuki Cultus</span></h3>
+              <p>ENGINE: <span id="cultusEngine">998cc</span></p>
+              <p>TRANSMISSION: <span id="cultusTrans">Manual/Automatic</span></p>
+              <p>PRICE: <span id="cultusprice">PKR 3,718,000 - 4,366,000</span></p>
+            </div>
+          </div>
+           <div class="box suzukiSwift">
+            <div class="imgBox">
+              <img src="images/suzukiSwift.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="swiftName">Suzuki Swift</span></h3>
+              <p>ENGINE: <span id="swiftEngine">1197cc</span></p>
+              <p>TRANSMISSION: <span id="swiftTrans">Manual/Automatic</span></p>
+              <p>PRICE: <span id="swiftprice">PKR 4,577,000 - 5,213,000</span></p>
+            </div>
+          </div>
+          <div class="box suzukiBolan">
+            <div class="imgBox">
+              <img src="images/suzukiBolan.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="BolanName">Suzuki Bolan</span></h3>
+              <p>ENGINE: <span id="BolanEngine">796cc</span></p>
+              <p>TRANSMISSION: <span id="BolanTrans">Manual</span></p>
+              <p>PRICE: <span id="Bolanprice">PKR 1,940,000 - 2,050,000</span></p>
+            </div>
+          </div>
+          <div class="box suuzkiRavi">
+            <div class="imgBox">
+              <img src="images/suzukiRavi.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="raviName">Suzuki Ravi</span></h3>
+              <p>ENGINE: <span id="raviEngine">1796cc</span></p>
+              <p>TRANSMISSION: <span id="raviTrans">Manual</span></p>
+              <p>PRICE: <span id="raviprice">PKR 1,856,000 - 1,911,000</span></p>
+            </div>
+          </div>
+          <div class="box suzukiJinmy">
+            <div class="imgBox">
+              <img src="images/suzukiJimny.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="jimnyName">Suzuki Jimny</span></h3>
+              <p>ENGINE: <span id="jimnyEngine">1462cc</span></p>
+              <p>TRANSMISSION: <span id="jimnyTrans">Automatic</span></p>
+              <p>PRICE: <span id="ijmnyprice">PKR 7,156,000</span></p>
+            </div>
+          </div>
+          <div class="box suzukiVitara">
+            <div class="imgBox">
+              <img src="images/suzukiVitara.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="vitaraName">Suzuki Vitara</span></h3>
+              <p>ENGINE: <span id="vitaraEngine">1586cc</span></p>
+              <p>TRANSMISSION: <span id="vitaraTrans">Automatic</span></p>
+              <p>PRICE: <span id="vitaraprice">PKR 8,550,000</span></p>
+            </div>
+          </div>
+          <div class="box suzukiMehran">
+            <div class="imgBox">
+              <img src="images/suzukiMehran.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="mehranName">Suzuki Mehran</span></h3>
+              <p>ENGINE: <span id="mehranEngine">800cc</span></p>
+              <p>TRANSMISSION: <span id="mehranTrans">Manual</span></p>
+              <p>PRICE: <span id="mehranprice">PKR 9.0 - 11.0 lacs</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ############### Toyota Section ############# -->
+       <section id="toyota">
+        <h1>TOYOTA</h1>
+        <div class="carBoxes">
+          <div class="box toyotaCorolla">
+            <div class="imgBox">
+              <img src="images/toyotaCorolla.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="corollaName">Toyota Corolla</span></h3>
+              <p>ENGINE: <span id="corollaEngine">1299cc - 1798cc</span></p>
+              <p>TRANSMISSION: <span id="corollaTrans">Manual/Automatic</span></p>
+              <p>PRICE: <span id="corollaprice">PKR 6,169,000 - 7,799,000</span></p>
+            </div>
+          </div>
+           <div class="box toyotaYaris">
+            <div class="imgBox">
+              <img src="images/toyotaYaris.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="yarisName">Toyota Yaris</span></h3>
+              <p>ENGINE: <span id="yarisEngine">1329cc - 1496cc</span></p>
+              <p>TRANSMISSION: <span id="yarisTrans">Manual/Automatic</span></p>
+              <p>PRICE: <span id="yarisprice">PKR 4,499,000 - 5,769,000</span></p>
+            </div>
+          </div>
+           <div class="box toyotaFortuner">
+            <div class="imgBox">
+              <img src="images/toyotaFortuner.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="fortunerName">Toyota Fortuner</span></h3>
+              <p>ENGINE: <span id="fortunerEngine">2694cc - 2755cc</span></p>
+              <p>TRANSMISSION: <span id="fortunerTrans">Automatic</span></p>
+              <p>PRICE: <span id="fortunerprice">PKR 15,809,000 - 21,089,000</span></p>
+            </div>
+          </div>
+           <div class="box toyotaHilux">
+            <div class="imgBox">
+              <img src="images/toyotaHilux.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="hiluxName">Toyota Hilux</span></h3>
+              <p>ENGINE: <span id="hiluxEngine">2755cc</span></p>
+              <p>TRANSMISSION: <span id="hiluxTrans">Manual/Automatic</span></p>
+              <p>PRICE: <span id="hiluxprice">PKR 9,829,000 - 13,279,000</span></p>
+            </div>
+          </div>
+          <div class="box toyota Camry">
+            <div class="imgBox">
+              <img src="images/toyotaCamry.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="camryName">Toyota Camry</span></h3>
+              <p>ENGINE: <span id="camryEngine">2494cc</span></p>
+              <p>TRANSMISSION: <span id="camryTrans">Automatic</span></p>
+              <p>PRICE: <span id="camryprice">PKR 23,319,000</span></p>
+            </div>
+          </div>
+          <div class="box toyotaPrius">
+            <div class="imgBox">
+              <img src="images/toyotaParius.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="pariusName">Toyota Prius</span></h3>
+              <p>ENGINE: <span id="pariusEngine">1798cc</span></p>
+              <p>TRANSMISSION: <span id="pariusTrans">Automatic</span></p>
+              <p>PRICE: <span id="pariusprice">PKR 12,349,000</span></p>
+            </div>
+          </div>
+        </div>
+       </section>
+       <!-- ############### Kia Section ############# -->
+       <section id="kia">
+        <h1>KIA</h1>
+        <div class="carBoxes">
+          <div class="box kiaPicanto">
+            <div class="imgBox">
+              <img src="images/kiaPicanto1.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="picantoName">Kia Picanto</span></h3>
+              <p>ENGINE: <span id="picantoEngine">1000cc</span></p>
+              <p>TRANSMISSION: <span id="picantoTrans">Manual/Automatic</span></p>
+              <p>PRICE: <span id="picantoprice">PKR 3,750,000 - 4,100,000</span></p>
+            </div>
+          </div>
+           <div class="box kiaSportage">
+            <div class="imgBox">
+              <img src="images/kiaSportage.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="sportageName">Kia Sportage</span></h3>
+              <p>ENGINE: <span id="sportageEngine">2000cc</span></p>
+              <p>TRANSMISSION: <span id="sportageTrans">Automatic</span></p>
+              <p>PRICE: <span id="sportageprice">PKR 8,500,000 - 10,500,000</span></p>
+            </div>
+          </div>
+           <div class="box kiaSorento">
+            <div class="imgBox">
+              <img src="images/kiaSorento.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="sorentoName">Kia Sorento</span></h3>
+              <p>ENGINE: <span id="sorentoEngine">2400cc - 3500cc</span></p>
+              <p>TRANSMISSION: <span id="sorentoTrans">Automatic</span></p>
+              <p>PRICE: <span id="sorentoprice">PKR 10,900,000 - 12,700,000</span></p>
+            </div>
+          </div>
+           <div class="box kiaStonic">
+            <div class="imgBox">
+              <img src="images/kiaStonic.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="stonicName">Kia Stonic</span></h3>
+              <p>ENGINE: <span id="stonicEngine">1400cc</span></p>
+              <p>TRANSMISSION: <span id="stonicTrans">Manual/Automatic</span></p>
+              <p>PRICE: <span id="stonicprice">PKR 5,900,000 - 6,500,000</span></p>
+            </div>
+          </div>
+          <div class="box KiaCarnival">
+            <div class="imgBox">
+              <img src="images/kiaCarnival.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="carnivalName">Kia Carnival</span></h3>
+              <p>ENGINE: <span id="carnivalEngine">3500cc</span></p>
+              <p>TRANSMISSION: <span id="carnivalTrans">Automatic</span></p>
+              <p>PRICE: <span id="carnivalprice">PKR 16,300,000 - 17,800,000</span></p>
+            </div>
+          </div>
+          <div class="box KiaNiro">
+            <div class="imgBox">
+              <img src="images/kiaNiro.jpeg">
+            </div>
+            <div class="textBox">
+              <h3>Name : <span id="niroName">Kia Niro</span></h3>
+              <p>ENGINE: <span id="niroEngine">1580cc</span></p>
+              <p>TRANSMISSION: <span id="niroTrans">Automatic</span></p>
+              <p>PRICE: <span id="niroprice">PKR 6,000,000</span></p>
+            </div>
+          </div>
+        </div>
+       </section>
+  
+   
+
+
+   
+   
+   
+   
+   
+   
+    <script src="app.js"></script>
+</body>
+</html>
